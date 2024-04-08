@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  body{
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the content stretches to at least the full height of the viewport */
+    background-image:  linear-gradient(rgb(60 75 119 / 75%), rgb(11 129 119 / 75%)), url(./Img\ and\ videos/img2.jpg);
+    width: 100%;
+    height: 100vh;
+    
+    background-size: cover;
+    background-position: center;
+  }
+  
+  
+  
+  .navbar {
+    width: 85%;
+    height: 15vh;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+   
+  }
+  
+  .logo {
+    width: 120px;
+    cursor: pointer;
+    filter: invert(86%) sepia(93%) saturate(1591%) hue-rotate(7deg) brightness(101%) contrast(104%);
+  margin-left: 0;
+  }
+  
+  .navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .navbar ul li a:hover {
+    color: rgb(0, 217, 255);
+  }
+  
+  .navbar ul li a:hover:nth-child(1) {
+    text-shadow: 0 0 20px rgb(0, 217, 255);
+  }
+  
+  .navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: rgb(0, 217, 255);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    border-radius: 50%;
+    transition: 0.5s;
+  }
+  
+  .navbar ul li:hover::after {
+    width: 100%;
+  }
+#about-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 12%;
+}
+.about-left img{
+    width: 420px;
+    height: 450px;
+    transform: translateY(0px);
+}
+.about-right {
+    width: 54%;
+}
+
+.about-right ul li {
+    display: flex;
+    align-items: center;
+}
+
+.about-right h1 {
+    color: #e74d06;
+    font-size: 37px;
+    margin-bottom: 5px;
+}
+
+.about-right p {
+    color: #fff;
+    line-height: 26px;
+    font-size: 15px;
+}
+
+.about-right .address {
+    margin: 25px 0;
+}
+
+.about-right .address ul li {
+    margin-bottom: 5px;
+}
+
+.address .address-logo {
+    margin-right: 15px;
+    color: #e74d06;
+}
+
+.address .saprater {
+    margin: 0 35px;
+}
+.social-icons a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 37px;
+  background-color: #2C2F3F;
+  color: #fff;
+  font-size: 18px;
+  margin: 2px;
+  transition: 0.4s;
+
+}
+
+.social-icons a:hover {
+  background-color: #00A78E;
+}
+
+/* 
+.about-right .expertise ul {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.expertise h3 {
+    margin-bottom: 10px;
+}
+
+.expertise .expertise-logo {
+    font-size: 19px;
+    margin-right: 10px;
+    color: #e74d06;
+} */
